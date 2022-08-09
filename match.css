@@ -1,0 +1,153 @@
+/* GreenScreen */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#screen {
+    /* background-color: #00ff00; */
+    width: 1920px;
+    height: 1080px;
+    letter-spacing: 2px;
+    font-size: 40px;
+    /* background-image: url(img/background.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 2.5s;
+    animation-name: fadein;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-top: -120px;
+}
+
+@keyframes fadein {
+    from {
+        margin-top: -120px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+#screen #top {
+    text-transform: uppercase;
+}
+
+#left_team_bg, #left_team_text, #right_team_bg, #right_team_text {
+    font-size: 2vmax;
+    white-space: nowrap;
+    position: absolute;
+    min-width: 300px;
+    text-align: center;
+    height: 53px;
+    padding-top: 17px !important;
+    padding-bottom: 7px !important;
+}
+
+#left_team_bg, #right_team_bg {
+    box-shadow: 5px 5px 50px black;
+}
+
+#left_team_bg {
+    right: 64%;
+    color: transparent;
+    background-color: #fff;
+    padding: 10px 25px 10px 25px;
+    border-right: 30px solid #0138fb;
+    transform: skew(10deg);
+}
+
+#left_team_text {
+    right: 64%;
+    color: #000;
+    padding: 10px 25px 10px 25px;
+    border-right: 30px solid transparent;
+}
+
+#right_team_bg {
+    left: 63.3%;
+    color: transparent;
+    background-color: #fff;
+    padding: 10px 25px 10px 25px;
+    border-left: 30px solid #ef7701;
+    transform: skew(-10deg);
+}
+
+#right_team_text {
+    left: 63.3%;
+    color: #000;
+    padding: 10px 25px 10px 25px;
+    border-left: 30px solid transparent;
+}
+
+#bestof_bg, #bestof_text {
+    position: absolute;
+    left: 46.7%;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+    top: 80px;
+    letter-spacing: 0px;
+}
+
+#bestof_bg {
+    color: transparent;
+    background-color: #fff;
+    transform: perspective(10px) rotateX(-1deg);
+}
+
+.mpoint {
+    height: 17px;
+    width: 17px;
+    background-color: rgba(255, 255, 255, 0.287);
+    transform: skew(10deg);
+    top: 85px;
+    left: 49.4%;
+    box-shadow: 5px 5px 50px black;
+    position: absolute;
+}
+
+.mpoint.la {
+    background-color: #0138fb !important;
+}
+
+.mpoint.ra {
+    background-color: #ef7701 !important;
+}
+
+#lmpoint1 {
+    margin-left: -500px;
+}
+
+#lmpoint2 {
+    margin-left: -470px;
+}
+
+#lmpoint3 {
+    margin-left: -440px;
+}
+
+#lmpoint4 {
+    margin-left: -410px;
+}
+
+#rmpoint1 {
+    margin-left: 500px;
+    transform: skew(-10deg);
+}
+
+#rmpoint2 {
+    margin-left: 470px;
+    transform: skew(-10deg);
+}
+
+#rmpoint3 {
+    margin-left: 440px;
+    transform: skew(-10deg);
+}
+
+#rmpoint4 {
+    margin-left: 410px;
+    transform: skew(-10deg);
+}
