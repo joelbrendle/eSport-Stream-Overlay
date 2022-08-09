@@ -51,4 +51,70 @@ $(document).ready(function(){
         }
 
     });
+
+    // change points left
+    $("#points_left").click(function(){
+        // promt points left
+        var pleft = prompt("1, 2, 3 or 4");
+
+        if (pleft != null) {
+
+            // remove call classes
+            $("#lmpoint1").removeClass('la');
+            $("#lmpoint2").removeClass('la');
+            $("#lmpoint3").removeClass('la');
+            $("#lmpoint4").removeClass('la');
+
+            // add class to points left
+            if (pleft == 1) {
+                $("#lmpoint1").addClass('la');
+            } else if (pleft == 2) {
+                $("#lmpoint1").addClass('la');
+                $("#lmpoint2").addClass('la');
+            } else if (pleft == 3) {
+                $("#lmpoint1").addClass('la');
+                $("#lmpoint2").addClass('la');
+                $("#lmpoint3").addClass('la');
+            } else if (pleft == 4) {
+                $("#lmpoint1").addClass('la');
+                $("#lmpoint2").addClass('la');
+                $("#lmpoint3").addClass('la');
+                $("#lmpoint4").addClass('la');
+            }
+        }
+
+    });
+
+    // change points right
+    $("#points_right").click(function(){
+        // promt points right
+        var pright = prompt("1, 2, 3 or 4");
+
+        if (pright != null) {
+
+            // remove call classes
+            $("#rmpoint1").removeClass('ra');
+            $("#rmpoint2").removeClass('ra');
+            $("#rmpoint3").removeClass('ra');
+            $("#rmpoint4").removeClass('rxa');
+
+            // add class to points right
+            if (pright == 1) {
+                $("#rmpoint1").addClass('ra');
+            } else if (pright == 2) {
+                $("#rmpoint1").addClass('ra');
+                $("#rmpoint2").addClass('ra');
+            } else if (pright == 3) {
+                $("#rmpoint1").addClass('ra');
+                $("#rmpoint2").addClass('ra');
+                $("#rmpoint3").addClass('ra');
+            } else if (pright == 4) {
+                $("#rmpoint1").addClass('ra');
+                $("#rmpoint2").addClass('ra');
+                $("#rmpoint3").addClass('ra');
+                $("#rmpoint4").addClass('ra');
+            }
+        }
+
+    });
 });
