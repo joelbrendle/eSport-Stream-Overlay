@@ -3,10 +3,13 @@
     <head>
         <title>Match</title>
         <meta charset="utf-8">
-        <link href="match.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <!-- include jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="controls.js"></script>
+        <link href="match.css" rel="stylesheet">
     </head>
     <body>
         <div id="screen">
@@ -15,8 +18,10 @@
                 <div id="left_team_text">Team LEFT</div>
                 <div id="right_team_bg">Team RIGHT</div>
                 <div id="right_team_text">Team RIGHT</div>
-                <div id="bestof_bg">Game 1 - BO7</div>
-                <div id="bestof_text">Game 1 - BO7</div>
+                <div id="bestof_bg" class="left">Game 1</div>
+                <div id="bestof_bg" class="right">- BO7</div>
+                <div id="bestof_text" class="left">Game 1</div>
+                <div id="bestof_text" class="right">- BO7</div>
                 <div id="lmpoint1" class="mpoint la"></div>
                 <div id="lmpoint2" class="mpoint la"></div>
                 <div id="lmpoint3" class="mpoint"></div>
