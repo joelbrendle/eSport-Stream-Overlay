@@ -29,7 +29,7 @@ $(document).ready(function(){
     // change game nr
     $("#bestof_text.left, #bestof_bg.left").click(function(){
         // promt game nr
-        var game_nr = prompt("Enter right team name");
+        var game_nr = prompt("Enter Game number");
 
         if(game_nr != null){
             // change game nr
